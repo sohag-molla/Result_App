@@ -41,14 +41,24 @@ name.forEach((item, index) => {
     )
       ? "passed"
       : "Failed"
-  }
-   Grade : ${getFinalGpa(
+  };
+
+  Grade : ${getFinalGrade(
+    ban[index],
+    eng[index],
+    math[index],
+    sien[index],
+    social[index],
+    islam[index]
+  )};
+
+   GPA : ${getFinalGpa(
      ban[index],
      eng[index],
      math[index],
      sien[index],
      social[index],
      islam[index]
-   )};
+   ).toFixed(2)};
         `);
 });

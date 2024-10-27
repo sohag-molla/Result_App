@@ -78,19 +78,19 @@ let getFinalGpa = (s1, s2, s3, s4, s5, s6) => {
 let getFinalGrade = (s1, s2, s3, s4, s5, s6) => {
   let finalGpa = getFinalGpa(s1, s2, s3, s4, s5, s6);
 
-  if (mark >= 0 && mark < 33) {
+  if (finalGpa >= 0 && finalGpa < 1) {
     return "F";
-  } else if (finalGpa >= 0 && finalGpa < 1) {
-    return "D";
   } else if (finalGpa >= 1 && finalGpa < 2) {
-    return "C";
+    return "D";
   } else if (finalGpa >= 2 && finalGpa < 3) {
-    return "B";
+    return "C";
   } else if (finalGpa >= 3 && finalGpa < 3.5) {
-    return "A-";
+    return "B";
   } else if (finalGpa >= 3.5 && finalGpa < 4) {
-    return "A";
+    return "A-";
   } else if (finalGpa >= 4 && finalGpa < 5) {
+    return "A";
+  } else if (finalGpa >= 5) {
     return "A+";
   } else {
     return "Ajob jinis";
