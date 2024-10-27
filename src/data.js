@@ -1,0 +1,9 @@
+const name = ["Sohag Molla", "Naim", "Najim", "sowrav"];
+const roll = [1, 2, 3, 4, 5];
+const reg = [121, 211, 212, 122, 112];
+const ban = [33, 44, 55, 66, 77];
+const eng = [31, 41, 51, 61, 71];
+const math = [32, 42, 52, 62, 72];
+const sien = [34, 45, 54, 64, 74];
+const social = [37, 47, 57, 67, 70];
+const islam = [38, 48, 58, 68, 78];
